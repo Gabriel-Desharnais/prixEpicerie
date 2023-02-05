@@ -73,80 +73,68 @@ for i, p in enumerate(pToLookUp):
 				"unité pu" :"/100ml"})
 #----------------- fin simulation ----------------
 
-# Faire le tour des produits de l'épicerie
-# Déterminer le nombre de ligne pour le produit en question
 startRow = 3
-endRow = startRow + len(pInfo) - 1
-rapport.cell(startRow, 1, "Lait 2%").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=1, end_row=endRow, end_column=1)
-rapport.cell(startRow, 2, "Québon").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=2, end_row=endRow, end_column=2)
-rapport.cell(startRow, 3, "59ce37ce-9de5-11ed-afbd-e4029b8a2c99").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=3, end_row=endRow, end_column=3)
-rapport.cell(startRow, 4, "1L").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=4, end_row=endRow, end_column=4)
-rapport.cell(startRow, 5, "Lait partiellement écrémé").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=5, end_row=endRow, end_column=5)
-rapport.cell(startRow, 6, "2.15").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=6, end_row=endRow, end_column=6)
-rapport.cell(startRow, 7, "ch").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=7, end_row=endRow, end_column=7)
-rapport.cell(startRow, 8, "0.215").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=8, end_row=endRow, end_column=8)
-rapport.cell(startRow, 9, "/100ml").alignment = styles.Alignment(vertical='center')
-rapport.merge_cells(start_row=startRow, start_column=9, end_row=endRow, end_column=9)
+for j in range(2):
+	endRow = startRow + len(pInfo) - 1
+	rapport.cell(startRow, 1, "Lait 2%").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=1, end_row=endRow, end_column=1)
+	rapport.cell(startRow, 2, "Québon").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=2, end_row=endRow, end_column=2)
+	rapport.cell(startRow, 3, "59ce37ce-9de5-11ed-afbd-e4029b8a2c99").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=3, end_row=endRow, end_column=3)
+	rapport.cell(startRow, 4, "1L").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=4, end_row=endRow, end_column=4)
+	rapport.cell(startRow, 5, "Lait partiellement écrémé").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=5, end_row=endRow, end_column=5)
+	rapport.cell(startRow, 6, "2.15").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=6, end_row=endRow, end_column=6)
+	rapport.cell(startRow, 7, "ch").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=7, end_row=endRow, end_column=7)
+	rapport.cell(startRow, 8, "0.215").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=8, end_row=endRow, end_column=8)
+	rapport.cell(startRow, 9, "/100ml").alignment = styles.Alignment(vertical='center')
+	rapport.merge_cells(start_row=startRow, start_column=9, end_row=endRow, end_column=9)
 
 
-esPrice = float("2.15")
-# Ajouter les produits équivalents
-smallestPrice = None
-spl = []
-for i, p in enumerate(pInfo):
-	rapport.cell(startRow+i, 10, p["Épicerie"])
-	rapport.cell(startRow+i, 11, p["nom"])
-	rapport.cell(startRow+i, 12, p["Marque"])
-	rapport.cell(startRow+i, 13, p["ndp"])
-	rapport.cell(startRow+i, 14, p["Format"])
-	rapport.cell(startRow+i, 15, p["description"])
-	rapport.cell(startRow+i, 16, p["prix"])
-	rapport.cell(startRow+i, 17, p["unité p"])
-	rapport.cell(startRow+i, 18, p["prix unitaire"])
-	rapport.cell(startRow+i, 19, p["unité pu"])
-	# Vérifié si le moins chers
-	price  = float(p["prix"])
-	if smallestPrice is None or smallestPrice > price:
-		#Nouveau meilleur prix
-		smallestPrice = price
-		spl = [startRow+i]
-	elif smallestPrice == price:
-		spl.append(startRow + i)
+	esPrice = float("2.15")
+	# Ajouter les produits équivalents
+	smallestPrice = None
+	spl = []
+	for i, p in enumerate(pInfo):
+		rapport.cell(startRow+i, 10, p["Épicerie"])
+		rapport.cell(startRow+i, 11, p["nom"])
+		rapport.cell(startRow+i, 12, p["Marque"])
+		rapport.cell(startRow+i, 13, p["ndp"])
+		rapport.cell(startRow+i, 14, p["Format"])
+		rapport.cell(startRow+i, 15, p["description"])
+		rapport.cell(startRow+i, 16, p["prix"])
+		rapport.cell(startRow+i, 17, p["unité p"])
+		rapport.cell(startRow+i, 18, p["prix unitaire"])
+		rapport.cell(startRow+i, 19, p["unité pu"])
+		# Vérifié si le moins chers
+		price  = float(p["prix"])
+		if smallestPrice is None or smallestPrice > price:
+			#Nouveau meilleur prix
+			smallestPrice = price
+			spl = [startRow+i]
+		elif smallestPrice == price:
+			spl.append(startRow + i)
 
 
 
 
-side = styles.Side(border_style="thick", color="000000")
-border = styles.Border(top=side,left=side,right=side, bottom=side)
+	side = styles.Side(border_style="thick", color="000000")
+	border = styles.Border(top=side,left=side,right=side, bottom=side)
 
-sideToBorder = ["top", "right", "bottom", "left"]
-row = startRow
-column = 1
-for s in range(4):
-	rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side, sideToBorder[s-1]: side})
-	if s%2:
-		borderLen = len(pInfo) - 2
-	else:
-		borderLen = 17
-	match s:
-		case 0:
-			column += 1
-		case 1:
-			row += 1
-		case 2:
-			column -= 1
-		case 3:
-			row -= 1
-	for i in range(borderLen):
-		rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side})
+	sideToBorder = ["top", "right", "bottom", "left"]
+	row = startRow
+	column = 1
+	for s in range(4):
+		rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side, sideToBorder[s-1]: side})
+		if s%2:
+			borderLen = len(pInfo) - 2
+		else:
+			borderLen = 17
 		match s:
 			case 0:
 				column += 1
@@ -156,25 +144,39 @@ for s in range(4):
 				column -= 1
 			case 3:
 				row -= 1
+		for i in range(borderLen):
+			rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side})
+			match s:
+				case 0:
+					column += 1
+				case 1:
+					row += 1
+				case 2:
+					column -= 1
+				case 3:
+					row -= 1
 
-# Ajouter la couleur pour le produit le moins chers
-# Est-ce que es a le meilleur prix
-if esPrice <= smallestPrice:
-	# Youpi on a le meilleur prix mettre le produit en vert
-	couleur = styles.PatternFill(start_color="81d41a", end_color="81d41a", fill_type="solid")
-		
-else:
-	# on n'a pas le meilleur prix mettre le produit en rouge
-	couleur = styles.PatternFill(start_color="ff3838", end_color="ff3838", fill_type="solid")
-# appliquer la couleur
-for i in range(1, 10):
-	rapport.cell(startRow, i).fill = couleur
+	# Ajouter la couleur pour le produit le moins chers
+	# Est-ce que es a le meilleur prix
+	if esPrice <= smallestPrice:
+		# Youpi on a le meilleur prix mettre le produit en vert
+		couleur = styles.PatternFill(start_color="81d41a", end_color="81d41a", fill_type="solid")
+			
+	else:
+		# on n'a pas le meilleur prix mettre le produit en rouge
+		couleur = styles.PatternFill(start_color="ff3838", end_color="ff3838", fill_type="solid")
+	# appliquer la couleur
+	for i in range(1, 10):
+		rapport.cell(startRow, i).fill = couleur
 
-# Appliquer la couleur aux meilleur prix équivalent
-couleur = styles.PatternFill(start_color="729fcf", end_color="729fcf", fill_type="solid")
-for row in spl:
-	for i in range(10, 20):
-		rapport.cell(row, i).fill = couleur
+	# Appliquer la couleur aux meilleur prix équivalent
+	couleur = styles.PatternFill(start_color="729fcf", end_color="729fcf", fill_type="solid")
+	for row in spl:
+		for i in range(10, 20):
+			rapport.cell(row, i).fill = couleur
+	
+	# Augmenter la ligne de départ
+	startRow = endRow + 1
 for prod in products_info.produitES:
 	pass
 
