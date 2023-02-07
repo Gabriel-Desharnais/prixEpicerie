@@ -1,6 +1,12 @@
 #!/bin/python3
 # -*- coding: utf-8 -*-
 
+import pandas
+
+# Ouvrir le fichier CSV
+productTable = pandas.read_csv("productTable.csv")
+equivalencyTable = pandas.read_csv("productEquivalency")
+
 barcodeToUUID = {}
 UUIDToName = {'59ce37ce-9de5-11ed-afbd-e4029b8a2c99': 'Lait partiellement écrémé 2% Québon',
               '7efc3b56-67cb-4cb0-a9dd-ccaf94a919e1': 'Lait Finement filtré 2% (1L)',
