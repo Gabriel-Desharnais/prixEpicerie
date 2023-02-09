@@ -7,7 +7,6 @@ import pandas
 productTable = pandas.read_csv("productTable.csv")
 equivalencyTable = pandas.read_csv("productEquivalency")
 
-barcodeToUUID = {}
 UUIDToName = {'59ce37ce-9de5-11ed-afbd-e4029b8a2c99': 'Lait partiellement écrémé 2% Québon',
               '7efc3b56-67cb-4cb0-a9dd-ccaf94a919e1': 'Lait Finement filtré 2% (1L)',
               '00ce1ad1-6fd6-4573-bc53-f2c718c8d7ca': 'Lait biologique 2% (1L)',
