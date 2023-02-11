@@ -20,7 +20,7 @@ def scrub(pIDs, rateLimit=0.5):
 	payload = {"lang": "fr",
 			   "date": "11022023",
 			   "pickupType": "STORE",
-			   "storeId": "8797",
+			   "storeId": "8922",
 			   "banner": "maxi"}
 	# Créer les headers
 	# TODO: Varié les user-Agent de manière réaliste
