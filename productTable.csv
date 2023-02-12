@@ -2,50 +2,50 @@ uuid,nom,description,marque,sku,Format,maxi
 2beee429-09c5-41f0-9383-2a7a58c087f8,Mozzarella,,P’tit Québec,,400 g,True
 76538387-342a-4fe1-a3af-fd841b9efcb4,Fromage cheddar blanc fort,,Sans Nom,,400 g,True
 8787162f-5963-4e12-9ed7-8c2067a598a2,Lait biologique 2% (1L),Le lait Natrel finement filtré biologique provient de fermes dévouées aux principes d’élevage biologique qui respectent des normes rigoureuses (normes canadiennes sur l'agriculture biologique).,Natrel,,1 l,True
-e5ddf3cf-f5d4-4766-97a3-9560c489c558,,,,fakeNotWorking,,[]
-5fd4e99b-1fa2-4a20-b251-db220362b356,,,,057316085627,,[]
-2b6dc04b-ac58-475c-9833-1c84443244ff,,,,628154138983,,[]
-341f833a-1ddf-4cf4-bd79-a02304bc4221,,,,064100144521,,[]
-14ae9680-3b7f-4df9-bb23-612c52e02446,,,,055742558869,,[]
-57fdc1e6-e2a4-46fa-9fbc-d70fc0e00f38,,,,055742545951,,[]
-ddde6b11-db66-4774-b68e-f07dcbe3724f,,,,055742545913,,[]
-02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,,,,060383186326,,[]
-93af6544-51d5-4b7c-bd4a-b42baf319a86,,,,061077771200,,[]
-907aa40e-66a0-4544-9694-df07a862e39b,,,,055742551631,,[]
-e6d5c4e8-e3d3-4049-bdee-08c596949923,,,,055742355482,,[]
-8dacb62a-554d-47e3-9ed0-a5dafb48ebe7,,,,055742523904,,[]
-bfc6f45b-0b03-408d-91f2-44283390428a,,,,055742525632,,[]
-263f0f7f-1322-4285-98e5-2c4d6acd85f1,,,,055742544787,,[]
-1f8c51a6-18f1-4f53-b97c-0b899d3473c7,,,,017000171531,,[]
-96e9a5e5-2e57-42fa-bb45-d29afcef77f7,,,,022400002200,,[]
-65f236f9-ea58-40d9-9c01-0741f1a4f28b,,,,055086000772,,[]
-f03133dc-4285-49b4-959a-3016b7e648da,,,,02240046,,[]
-5f31635f-dde6-49dd-89ce-9423aaf94d80,,,,055086002189,,[]
-2f39adc7-5367-474a-a308-ca79552a4bea,,,,055086000819,,[]
-fdcfeffc-e74f-4833-b4a7-95dc65f39787,,,,6018700212269,,[]
-cdef314b-8dad-47e0-9a2d-367d2298e8c6,,,,8411104043107,,[]
-070ae6f9-5efe-47f7-80e2-06f1d25b862b,,,,077326830031,,[]
-65eaf000-c1f3-455b-a0e8-d59d1476dbaa,,,,058000313293,,[]
-16405d3e-239d-4d79-b37a-635f3e659ea4,,,,058000313194,,[]
-3fa4f55e-9d4f-4959-b961-d8d62f543075,,,,055742363432,,[]
-a499285b-92c5-462f-8c87-2d12406d0793,,,,055742374629,,[]
-ec47fefb-83fe-4bfe-9c4c-31b4fb1bcea4,,,,064200327206,,[]
-fc1b011b-b6f3-4516-8d81-f20d909425d7,,,,055742552386,,[]
-58001ad0-9e5a-4e7a-a60d-97fdc08ef2fb,,,,055742344523,,[]
-5988400b-8783-4eff-b3e8-5243f7425279,,,,068100084245,,[]
-22179915-915a-410f-bc2e-2434e74c1074,,,,059100008003,,[]
-7bb97e5c-9a2d-434f-8eb7-09ab65d7e8ed,,,,055742569674,,[]
-edf83c18-823e-4af3-b5df-0caed2339469,,,,064200116640,,[]
-9a15d96f-250a-4636-b7fb-9b11965b5ed8,,,,066010001055,,[]
-ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,,,,062847210233,,[]
-93739ebc-f716-464e-8f72-3a4baea10cbe,,,,055742553390,,[]
-f41b6505-9a3e-481d-bc2c-346d54c47491,,,,055742382013,,[]
-33a3c1c4-34b0-461b-9fd1-2fd35f224d8d,,,,055742570328,,[]
-6fa22fdd-3eae-414f-a933-d838590df41d,,,,068200701066,,[]
-22a05a27-1b32-495e-b744-29691a2fad50,,,,055872271867,,[]
-8425ee3b-f8a0-4e17-9b91-95f20be97023,,,,06853729,,[]
-7ce9bada-c58d-4597-8187-14bca3382859,,,,059749969444,,[]
-7f595c3d-59c1-48f7-9f8f-40052d3a5d43,,,,059749969420,,[]
-5d686c90-89f6-431a-be4d-4701c2d5c6b3,,,,055742561951,,[]
-aef34427-0e84-4dae-a1f5-29f7d0511bbf,,,,064420254016,,[]
-bc402d78-b9e5-46f1-a11e-e67c77e2deaa,,,,055872025019,,[]
+e5ddf3cf-f5d4-4766-97a3-9560c489c558,,,,fakeNotWorking,,False
+5fd4e99b-1fa2-4a20-b251-db220362b356,,,,057316085627,,False
+2b6dc04b-ac58-475c-9833-1c84443244ff,Céréales Honeycombs,Céréales de maïs et d'avoine à la forme unique de rayon de miel.,Post,628154138983,400 g,True
+341f833a-1ddf-4cf4-bd79-a02304bc4221,MW FRST CRL 650GMX10,Faites à 100 % de grains entiers190 calories par 55 gSource de 10 vitamines et minéraux40 g de grains entiers par portion de 55 g,Kellogg’s,064100144521,650 g,True
+14ae9680-3b7f-4df9-bb23-612c52e02446,,,,055742558869,,False
+57fdc1e6-e2a4-46fa-9fbc-d70fc0e00f38,,,,055742545951,,False
+ddde6b11-db66-4774-b68e-f07dcbe3724f,,,,055742545913,,False
+02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,"Purée De Pommes, De Betteraves Et De Graines De Lin En Sachet",,PC Biologique,060383186326,128 ml,True
+93af6544-51d5-4b7c-bd4a-b42baf319a86,Pain blanc de style italien,,,061077771200,675 g,True
+907aa40e-66a0-4544-9694-df07a862e39b,,,,055742551631,,False
+e6d5c4e8-e3d3-4049-bdee-08c596949923,,,,055742355482,,False
+8dacb62a-554d-47e3-9ed0-a5dafb48ebe7,,,,055742523904,,False
+bfc6f45b-0b03-408d-91f2-44283390428a,,,,055742525632,,False
+263f0f7f-1322-4285-98e5-2c4d6acd85f1,,,,055742544787,,False
+1f8c51a6-18f1-4f53-b97c-0b899d3473c7,,,,017000171531,,False
+96e9a5e5-2e57-42fa-bb45-d29afcef77f7,,,,022400002200,,False
+65f236f9-ea58-40d9-9c01-0741f1a4f28b,,,,055086000772,,False
+f03133dc-4285-49b4-959a-3016b7e648da,,,,02240046,,False
+5f31635f-dde6-49dd-89ce-9423aaf94d80,,,,055086002189,,False
+2f39adc7-5367-474a-a308-ca79552a4bea,,,,055086000819,,False
+fdcfeffc-e74f-4833-b4a7-95dc65f39787,,,,6018700212269,,False
+cdef314b-8dad-47e0-9a2d-367d2298e8c6,,,,8411104043107,,False
+070ae6f9-5efe-47f7-80e2-06f1d25b862b,,,,077326830031,,False
+65eaf000-c1f3-455b-a0e8-d59d1476dbaa,Dentifrice au fluorure Protection contre la carie Menthe fraîche,"<p>Le dentifrice Colgate Protection contre la carie procure la même protection fiable contre les caries pour toute la famille. Formulé au fluorure, il est éprouvé en clinique pour aider à renforcer les dents en réparant les points affaiblis avant la formation des caries et procure une haleine propre et fraîche. De plus, son excellent goût de menthe fraîche plaira à toute la famille.</p><ul><li>Combat la carie</li><li>Nettoie les dents à fond</li><li>Renforce les dents avec du fluorure</li><li>Excellent goût de menthe</li></ul>",Colgate,058000313293,95 ml,True
+16405d3e-239d-4d79-b37a-635f3e659ea4,,,,058000313194,,False
+3fa4f55e-9d4f-4959-b961-d8d62f543075,,,,055742363432,,False
+a499285b-92c5-462f-8c87-2d12406d0793,,,,055742374629,,False
+ec47fefb-83fe-4bfe-9c4c-31b4fb1bcea4,Sauce pour pâtes Sélection du Jardin Parmesan et romano,"La sauce pour pâtes Recette de six légumes Sélection du Jardin Catelli est unique en son genre. Elle contient un mélange exclusif de six légumes du jardin – tomates, céleri, carottes, oignons, poivrons verts et ail – savamment relevé d’herbes et d’épices. Et ce n’est pas tout! La sauce pour pâtes Recette de six légumes Sélection du Jardin Catelli est pauvre en gras et en gras saturés et ne contient aucun agent de conservation. Délectez-vous de cette délicieuse sauce épaisse et veloutée, qui regorge du bon goût des fromages parmesan et romano.<ul><li>Faite d’un mélange exclusif de six légumes du jardin : tomates, céleri, carottes, oignons, poivrons verts et ail</li><li>Texture lisse et épaisse</li><li>Faible teneur en gras et en gras saturés</li><li>Sans agent de conservation</li><li>Source de vitamines A et C et de fibres</li></ul>",Catelli,064200327206,640 ml,True
+fc1b011b-b6f3-4516-8d81-f20d909425d7,,,,055742552386,,False
+58001ad0-9e5a-4e7a-a60d-97fdc08ef2fb,,,,055742344523,,False
+5988400b-8783-4eff-b3e8-5243f7425279,Beurre d’arachide croquant,"Le beurre d’arachide croquant Kraft est un classique canadien dont toutes les familles raffolent. Avec son goût délicieux et distinctif d’arachide et sa texture croquante irrésistible, le beurre d’arachide croquant Kraft est fait d’arachides rôties à sec de qualité supérieure pour offrir la meilleure des saveurs. Goûtez au beurre d’arachide croquant Kraft sur votre pain grillé, dans vos sandwichs et sur des fruits ou des légumes. Ce beurre d’arachide crémeux est excellent également dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries. Vous pouvez aussi déguster ce savoureux beurre d’arachide à la cuillère pour obtenir une collation rapide! Le beurre d’arachide Kraft est le beurre d’arachide préféré au Canada et fièrement préparé au Canada. Ça colle entre nous. Même en cuisine.<ul><li>Fait d’arachides rôties à sec de qualité supérieure</li><li>Un goût délicieux et distinctif d’arachide et une texture croquante</li><li>Excellent dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries</li><li>Le beurre d’arachide préféré au Canada</li><li>Fièrement préparé au Canada</li></ul>",Kraft,068100084245,1 kg,True
+22179915-915a-410f-bc2e-2434e74c1074,Riz blanc à grains longs de qualité supérieure 100 %,"Riz instantané à grains longs, prêt en cinq minutes.",Minute Rice,059100008003,2.6 kg,True
+7bb97e5c-9a2d-434f-8eb7-09ab65d7e8ed,,,,055742569674,,False
+edf83c18-823e-4af3-b5df-0caed2339469,"Pâtes Classiques, Spaghettini","<ul><p>Vive le SpaghettiniSi elles sont idéales pour la traditionnelle  sauce tomate avec boulettes de viande, ces pâtes offerent également des possibilités infinies en s'harmonisant à tous les types de sauce. Fait de pâtes offrent également des possibilitiés infinies en s'harmonisant à tous les types de sauce. Fait de pâtes entièrement naturelles, ce mets légendaire plaira à coup sûr aux gourmands comme aux connaisseurs.</p><p>Chaque achat de pâtes Catelli contribue à soutenir les banques alimentaires du Canada. Pour en savoir plus, rendez-vous au catelli.ca/fr/nourrir-lavenir/.</p><ul><p> Tout Le Monde Raffole D'un Classique<li>Vérifié sans OGM</li><li>Ingrédients naturels</li></ul><li>Découvrez de délicieuses recettes au catelli.ca </li></ul></p>",Catelli,064200116640,500 g,True
+9a15d96f-250a-4636-b7fb-9b11965b5ed8,,,,066010001055,,False
+ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,,,,062847210233,,False
+93739ebc-f716-464e-8f72-3a4baea10cbe,,,,055742553390,,False
+f41b6505-9a3e-481d-bc2c-346d54c47491,,,,055742382013,,False
+33a3c1c4-34b0-461b-9fd1-2fd35f224d8d,,,,055742570328,,False
+6fa22fdd-3eae-414f-a933-d838590df41d,Tartinade traditionnelle,"Margarine lisse et tartinable, au goût légèrement salé.",Lactantia,068200701066,427 g,True
+22a05a27-1b32-495e-b744-29691a2fad50,Beurre salé,,Natrel,055872271867,454 g,True
+8425ee3b-f8a0-4e17-9b91-95f20be97023,,,,06853729,,False
+7ce9bada-c58d-4597-8187-14bca3382859,,,,059749969444,,False
+7f595c3d-59c1-48f7-9f8f-40052d3a5d43,,,,059749969420,,False
+5d686c90-89f6-431a-be4d-4701c2d5c6b3,,,,055742561951,,False
+aef34427-0e84-4dae-a1f5-29f7d0511bbf,Produit laitier sans lactose 1% (1L),"Nous préparons nos produits laitiers sans lactose à l'aide d’un procédé unique qui permet de conserver tout le bon goût pur et frais du lait et d’éliminer le lactose susceptible de vous incommoder. Vous pouvez donc bénéficier à nouveau d’une excellente source de calcium, de vitamine D et de protéines, et d’une source de vitamine A dans le cadre d'un régime alimentaire bien équilibré.",Natrel,064420254016,1 l,True
+bc402d78-b9e5-46f1-a11e-e67c77e2deaa,2% milk (2L),Pourquoi changer un classique ? Le lait partiellement écrémé 2% Québon combine tout le bon goût du lait frais québécois et les minéraux et vitamines nécessaires au maintien d'une bonne santé. De nos fermes à votre famille.,QUÉBON,055872025019,2 l,True
