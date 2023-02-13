@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 products = pandas.read_csv("productTable.csv")
+#products["maxi"] = products["maxi"].astype("bool")
 
 
 maxiProds = products.loc[products["maxi"] == True]

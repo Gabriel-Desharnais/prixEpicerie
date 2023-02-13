@@ -92,7 +92,7 @@ def scrub(pIDs, rateLimit=0.5):
 	secTowait = 1/rateLimit
 	# Créer les paramètres
 	payload = {"lang": "fr",
-			   "date": "11022023",
+			   "date": "14022023",
 			   "pickupType": "STORE",
 			   "storeId": "8922",
 			   "banner": "maxi"}
@@ -138,7 +138,7 @@ def scrub(pIDs, rateLimit=0.5):
 			products.loc[products['uuid'] == pID] = productInfoMaxi
 			scrubedData[pID] = {"nom":res["name"], 
 								"description":res.get("description", ""), 
-								"marque":res["brand"], 
+								"marque":res.get("brand", ""), 
 								"sku":None, 
 								"format":res["packageSize"]}
 			#scrubedData[pID](f"{res['offers'][0]['price']['value']} $/{res['offers'][0]['price']['unit']}    {res['offers'][0]['wasPrice']['value']} $/{res['offers'][0]['wasPrice']['unit']}")
