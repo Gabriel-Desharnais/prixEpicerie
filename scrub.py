@@ -2,10 +2,13 @@
 # -*- coding: utf-8 -*-
  
 """Ce script utilise le module maxi pour importer les données scrubé sur le site de maxi"""
-import maxi
-import products_info
 from openpyxl import Workbook
 from openpyxl import styles
+import pandas
+
+produitsEs = pandas.read_csv("produitses.csv",na_filter=False)
+productTable = pandas.read_csv("productTable.csv",na_filter=False)
+
 
 wb = Workbook()
 # Activer le classeur
@@ -41,9 +44,9 @@ rapport["R2"] = "Prix unitaire"
 rapport["S2"] = "Unité"
 
 # Préparer la liste des produit à vérifier
-pToLookUp = set()
-for prod in products_info.produitES:
-	pToLookUp |= products_info.equivalencyTable.get(prod, set())
+pToLookUp = set(range(6))
+#for prod in products_info.produitES:
+#	pToLookUp |= products_info.equivalencyTable.get(prod, set())
 
 #pInfo = maxi.scrub(pToLookUp)
 #----------------- Simuler les réponses des épiceries ------------------
@@ -74,23 +77,28 @@ for i, p in enumerate(pToLookUp):
 #----------------- fin simulation ----------------
 
 startRow = 3
-for j in range(2):
+for uuid in produitsEs["uuid"].values:
+	# Trouver le produit dans la bd producttable
+	match = productTable.loc[productTable["uuid"] == uuid,["nom", "marque", "Format", "description"]].values
+	if len(match) != 1:
+		continue
+	match = match[0]
 	endRow = startRow + len(pInfo) - 1
-	rapport.cell(startRow, 1, "Lait 2%").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 1, match[0]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=1, end_row=endRow, end_column=1)
-	rapport.cell(startRow, 2, "Québon").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 2, match[1]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=2, end_row=endRow, end_column=2)
-	rapport.cell(startRow, 3, "59ce37ce-9de5-11ed-afbd-e4029b8a2c99").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 3, uuid).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=3, end_row=endRow, end_column=3)
-	rapport.cell(startRow, 4, "1L").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 4, match[2]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=4, end_row=endRow, end_column=4)
-	rapport.cell(startRow, 5, "Lait partiellement écrémé").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 5, match[3]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=5, end_row=endRow, end_column=5)
-	rapport.cell(startRow, 6, "2.15").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 6, "").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=6, end_row=endRow, end_column=6)
 	rapport.cell(startRow, 7, "ch").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=7, end_row=endRow, end_column=7)
-	rapport.cell(startRow, 8, "0.215").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 8, "").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=8, end_row=endRow, end_column=8)
 	rapport.cell(startRow, 9, "/100ml").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=9, end_row=endRow, end_column=9)
@@ -177,14 +185,9 @@ for j in range(2):
 	
 	# Augmenter la ligne de départ
 	startRow = endRow + 1
-for prod in products_info.produitES:
-	pass
 
 
 
 
-#for name, price in zip(products_info.UUIDToName.values(), pInfo):
-#	print(name,":\t\t" , price)
 
-# Save to file
 wb.save("result/rapport.xlsx")
