@@ -1,5 +1,5 @@
 uuid,nom,description,marque,sku,Format,maxi
-2beee429-09c5-41f0-9383-2a7a58c087f8,Mozzarella,,P’tit Québec,,400 g,True
+2beee429-09c5-41f0-9383-2a7a58c087f8,Mozzarella,,P’tit Québec,068200005379,400 g,True
 76538387-342a-4fe1-a3af-fd841b9efcb4,Fromage cheddar blanc fort,,Sans Nom,,400 g,True
 8787162f-5963-4e12-9ed7-8c2067a598a2,Lait biologique 2% (1L),Le lait Natrel finement filtré biologique provient de fermes dévouées aux principes d’élevage biologique qui respectent des normes rigoureuses (normes canadiennes sur l'agriculture biologique).,Natrel,,1 l,True
 e5ddf3cf-f5d4-4766-97a3-9560c489c558,,,,fakeNotWorking,,False
@@ -27,40 +27,39 @@ cdef314b-8dad-47e0-9a2d-367d2298e8c6,,,,8411104043107,,False
 070ae6f9-5efe-47f7-80e2-06f1d25b862b,,,,077326830031,,False
 65eaf000-c1f3-455b-a0e8-d59d1476dbaa,Dentifrice au fluorure Protection contre la carie Menthe fraîche,"<p>Le dentifrice Colgate Protection contre la carie procure la même protection fiable contre les caries pour toute la famille. Formulé au fluorure, il est éprouvé en clinique pour aider à renforcer les dents en réparant les points affaiblis avant la formation des caries et procure une haleine propre et fraîche. De plus, son excellent goût de menthe fraîche plaira à toute la famille.</p><ul><li>Combat la carie</li><li>Nettoie les dents à fond</li><li>Renforce les dents avec du fluorure</li><li>Excellent goût de menthe</li></ul>",Colgate,058000313293,95 ml,True
 16405d3e-239d-4d79-b37a-635f3e659ea4,,,,058000313194,,False
-3fa4f55e-9d4f-4959-b961-d8d62f543075,,,,055742363432,,False
-a499285b-92c5-462f-8c87-2d12406d0793,,,,055742374629,,False
-ec47fefb-83fe-4bfe-9c4c-31b4fb1bcea4,Sauce pour pâtes Sélection du Jardin Parmesan et romano,"La sauce pour pâtes Recette de six légumes Sélection du Jardin Catelli est unique en son genre. Elle contient un mélange exclusif de six légumes du jardin – tomates, céleri, carottes, oignons, poivrons verts et ail – savamment relevé d’herbes et d’épices. Et ce n’est pas tout! La sauce pour pâtes Recette de six légumes Sélection du Jardin Catelli est pauvre en gras et en gras saturés et ne contient aucun agent de conservation. Délectez-vous de cette délicieuse sauce épaisse et veloutée, qui regorge du bon goût des fromages parmesan et romano.<ul><li>Faite d’un mélange exclusif de six légumes du jardin : tomates, céleri, carottes, oignons, poivrons verts et ail</li><li>Texture lisse et épaisse</li><li>Faible teneur en gras et en gras saturés</li><li>Sans agent de conservation</li><li>Source de vitamines A et C et de fibres</li></ul>",Catelli,064200327206,640 ml,True
-fc1b011b-b6f3-4516-8d81-f20d909425d7,,,,055742552386,,False
-58001ad0-9e5a-4e7a-a60d-97fdc08ef2fb,,,,055742344523,,False
-5988400b-8783-4eff-b3e8-5243f7425279,Beurre d’arachide croquant,"Le beurre d’arachide croquant Kraft est un classique canadien dont toutes les familles raffolent. Avec son goût délicieux et distinctif d’arachide et sa texture croquante irrésistible, le beurre d’arachide croquant Kraft est fait d’arachides rôties à sec de qualité supérieure pour offrir la meilleure des saveurs. Goûtez au beurre d’arachide croquant Kraft sur votre pain grillé, dans vos sandwichs et sur des fruits ou des légumes. Ce beurre d’arachide crémeux est excellent également dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries. Vous pouvez aussi déguster ce savoureux beurre d’arachide à la cuillère pour obtenir une collation rapide! Le beurre d’arachide Kraft est le beurre d’arachide préféré au Canada et fièrement préparé au Canada. Ça colle entre nous. Même en cuisine.<ul><li>Fait d’arachides rôties à sec de qualité supérieure</li><li>Un goût délicieux et distinctif d’arachide et une texture croquante</li><li>Excellent dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries</li><li>Le beurre d’arachide préféré au Canada</li><li>Fièrement préparé au Canada</li></ul>",Kraft,068100084245,1 kg,True
-22179915-915a-410f-bc2e-2434e74c1074,Riz blanc à grains longs de qualité supérieure 100 %,"Riz instantané à grains longs, prêt en cinq minutes.",Minute Rice,059100008003,2.6 kg,True
-7bb97e5c-9a2d-434f-8eb7-09ab65d7e8ed,,,,055742569674,,False
-edf83c18-823e-4af3-b5df-0caed2339469,"Pâtes Classiques, Spaghettini","<ul><p>Vive le SpaghettiniSi elles sont idéales pour la traditionnelle  sauce tomate avec boulettes de viande, ces pâtes offerent également des possibilités infinies en s'harmonisant à tous les types de sauce. Fait de pâtes offrent également des possibilitiés infinies en s'harmonisant à tous les types de sauce. Fait de pâtes entièrement naturelles, ce mets légendaire plaira à coup sûr aux gourmands comme aux connaisseurs.</p><p>Chaque achat de pâtes Catelli contribue à soutenir les banques alimentaires du Canada. Pour en savoir plus, rendez-vous au catelli.ca/fr/nourrir-lavenir/.</p><ul><p> Tout Le Monde Raffole D'un Classique<li>Vérifié sans OGM</li><li>Ingrédients naturels</li></ul><li>Découvrez de délicieuses recettes au catelli.ca </li></ul></p>",Catelli,064200116640,500 g,True
-9a15d96f-250a-4636-b7fb-9b11965b5ed8,,,,066010001055,,False
-ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,,,,062847210233,,False
-93739ebc-f716-464e-8f72-3a4baea10cbe,,,,055742553390,,False
-f41b6505-9a3e-481d-bc2c-346d54c47491,,,,055742382013,,False
+3fa4f55e-9d4f-4959-b961-d8d62f543075,Tomates en dés,,Compliment,055742363432,796 ml,False
+a499285b-92c5-462f-8c87-2d12406d0793,Sauce tomate,,Compliment,055742374629,398 ml,False
+ec47fefb-83fe-4bfe-9c4c-31b4fb1bcea4,Sauce à la viande pour pâtes,,Catelli,064200327206,640 ml,False
+fc1b011b-b6f3-4516-8d81-f20d909425d7,Sauce marinara,,Compliment,055742552386,650 ml,False
+58001ad0-9e5a-4e7a-a60d-97fdc08ef2fb,Confiture fraise,,Compliment,055742344523,500 ml,False
+5988400b-8783-4eff-b3e8-5243f7425279,Beurre d’arachide croquant,"Le beurre d’arachide croquant Kraft est un classique canadien dont toutes les familles raffolent. Avec son goût délicieux et distinctif d’arachide et sa texture croquante irrésistible, le beurre d’arachide croquant Kraft est fait d’arachides rôties à sec de qualité supérieure pour offrir la meilleure des saveurs. Goûtez au beurre d’arachide croquant Kraft sur votre pain grillé, dans vos sandwichs et sur des fruits ou des légumes. Ce beurre d’arachide crémeux est excellent également dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries. Vous pouvez aussi déguster ce savoureux beurre d’arachide à la cuillère pour obtenir une collation rapide! Le beurre d’arachide Kraft est le beurre d’arachide préféré au Canada et fièrement préparé au Canada. Ça colle entre nous. Même en cuisine.<ul><li>Fait d’arachides rôties à sec de qualité supérieure</li><li>Un goût délicieux et distinctif d’arachide et une texture croquante</li><li>Excellent dans les sauces, les marinades, les boissons fouettées, les biscuits et diverses pâtisseries</li><li>Le beurre d’arachide préféré au Canada</li><li>Fièrement préparé au Canada</li></ul>",Kraft,,1 kg,True
+22179915-915a-410f-bc2e-2434e74c1074,Riz blanc à grains longs de qualité supérieure 100 %,"Riz instantané à grains longs, prêt en cinq minutes.",Minute Rice,,2.6 kg,True
+7bb97e5c-9a2d-434f-8eb7-09ab65d7e8ed,Riz grain long,,Compliment,055742569674,,False
+edf83c18-823e-4af3-b5df-0caed2339469,rotini,,Catelli,064200116640,500 g,False
+9a15d96f-250a-4636-b7fb-9b11965b5ed8,Sel de table,,Windsor,066010001055,1 kg,True
+ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,Sucre granulé spécial fin,,Lantic,062847210233,2 kg,False
+93739ebc-f716-464e-8f72-3a4baea10cbe,Café moulu moyen,,Valuer Plus,055742553390,925 g,False
+f41b6505-9a3e-481d-bc2c-346d54c47491,Café instantané,,Compliment,055742382013,200 g,False
 33a3c1c4-34b0-461b-9fd1-2fd35f224d8d,,,,055742570328,,False
 6fa22fdd-3eae-414f-a933-d838590df41d,Tartinade traditionnelle,"Margarine lisse et tartinable, au goût légèrement salé.",Lactantia,068200701066,427 g,True
 22a05a27-1b32-495e-b744-29691a2fad50,Beurre salé,,Natrel,055872271867,454 g,True
 8425ee3b-f8a0-4e17-9b91-95f20be97023,,,,06853729,,False
 7ce9bada-c58d-4597-8187-14bca3382859,,,,059749969444,,False
-7f595c3d-59c1-48f7-9f8f-40052d3a5d43,,,,059749969420,,False
-5d686c90-89f6-431a-be4d-4701c2d5c6b3,,,,055742561951,,False
+7f595c3d-59c1-48f7-9f8f-40052d3a5d43,Fromage cheddar blanc doux,,Selection,059749969420,400 g,False
+5d686c90-89f6-431a-be4d-4701c2d5c6b3,Oeuf gros,,Compliment,055742561951,12,False
 aef34427-0e84-4dae-a1f5-29f7d0511bbf,Produit laitier sans lactose 1% (1L),"Nous préparons nos produits laitiers sans lactose à l'aide d’un procédé unique qui permet de conserver tout le bon goût pur et frais du lait et d’éliminer le lactose susceptible de vous incommoder. Vous pouvez donc bénéficier à nouveau d’une excellente source de calcium, de vitamine D et de protéines, et d’une source de vitamine A dans le cadre d'un régime alimentaire bien équilibré.",Natrel,064420254016,1 l,True
 bc402d78-b9e5-46f1-a11e-e67c77e2deaa,2% milk (2L),Pourquoi changer un classique ? Le lait partiellement écrémé 2% Québon combine tout le bon goût du lait frais québécois et les minéraux et vitamines nécessaires au maintien d'une bonne santé. De nos fermes à votre famille.,QUÉBON,055872025019,2 l,True
 e502739a-7f0d-40e8-a442-130173651b7b,Pain blanc enrichi,"<p>Ajoutez ce pain blanc enrichi à votre liste d’achats hebdomadaires. Tranché et prêt à être mangé, ce pain se déguste grillé avec du beurre ou peut servir de base pour créer des sandwichs à plusieurs étages.</pl>",Sans Nom,,675 g,True
 6b9e03c6-c077-4307-91c4-93d2ed1be35c,Miche de blé entier,"<p>Pour faire vos lunchs cette semaine, servez-vous de cette délicieuse miche de blé entier. Fait de blé entier à 100 %, ce pain tranché se prête particulièrement bien aux sandwichs de légumes ou aux BLT classiques.</pl>",Sans Nom,,675 g,True
 c6deb95c-32bf-483f-a87c-7807184d7b9d,Céréales,,Kellogg’s,,340 g,True
-4e4181c7-b048-4d0e-a025-43cc45676734,Céréales Honeycombs,Céréales de maïs et d'avoine à la forme unique de rayon de miel.,Post,,400 g,True
 1551966c-162a-4688-9f46-f4a5b3400f4a,Riz blanc à grains longs,Riz blanc à texture moelleuse et saveur neutre.,Sans Nom,,2 kg,True
 a95daee1-2140-4e84-aec6-dcaef7297b93,Converted Riz,"Savourez de meilleurs repas grâce à Ben. Classique et sans prétention, le riz à grains longs étuvé de marque Ben's Original Converted peut accompagner n’importe quel repas, du plus simple au plus élaboré. Toujours pratique, toujours délicieux. Combinez le riz de marque Ben's Original, qui est prêt en 20 minutes, avec vos légumes et protéines préférés pour un repas complet et facile à préparer. Pour votre prochain souper, essayez une de nos autres variétés de riz sec, comme le riz basmati ou le riz brun à grains entiers de marque Ben's Original.<ul><li>Sans Gluten</li><li>Prêt en 20 minutes</li><li>Naturel à 100 %</li></ul>",Ben’s,,2 kg,True
-05fbae84-35c9-4a3d-b74e-6c1b38b09754,Riz instantané,,Minute Rice,,350 g,True
+05fbae84-35c9-4a3d-b74e-6c1b38b09754,Riz instantané,,Minute Rice,059100008003,350 g,True
 0e1279cc-cb79-4450-828a-e43b77577081, Huile végétale pure à 100 %,,Sans Nom,,946 ml,True
 12ed1c95-0049-4af7-a5b3-edb844129055,Huile de canola pure à 100 %,,Sans Nom,,946 ml,True
 9898eab7-8bbe-42f9-b1e8-a3797f27dbe6,Huile de tournesol pure à 100 %,,Sans Nom,,946 ml,True
 22c95cce-1199-429d-b32b-8ec93aa834b4,Huile de maïs pure à 100 %,,Sans Nom,,946 ml,True
-26eceb66-8992-47a9-936d-1b63a9a977c7,,,,,,True
+26eceb66-8992-47a9-936d-1b63a9a977c7,pin crem,,Kraft,068100084245,,True
 dacd2ba7-8d69-4d84-be07-b19dba9ca263,Pâtes spaghetti,"Faites avec de la semoule de blé dur à 100 %. L’une des pâtes les mieux connues et les plus utilisées, les spaghettis ont une forme longue et mince. Savourez-les avec de la sauce bolognaise ou dans un plat de carbonara avec bacon et parmesan.",Sans Nom,,900 g,True
 0714e4af-f5ab-4e77-8e72-220ceeb4b13c,Pâtes rotini tricolore,"Ces pâtes en forme de spirale sont faites de semoule de blé dur à 100 % et contiennent des poudres de tomates et d’épinards qui ajoutent des couleurs vives et de la saveur. Idéales pour les salades de pâtes et les plats de pâtes cuits au four, elles sont fabriquées à l’aide du procédé de tréfilage dans des moules en bronze traditionnels, ce qui permet la fabrication de pâtes légèrement rugueuses auxquelles les sauces et vinaigrettes adhèrent remarquablement bien.",le Choix du Président,,454 g,True
 a7770f90-0611-40c6-a3ad-fc7bfd052758,Sauce pour pâtes marinara ,"Sauce pour pâtes marinara fait avec oignon sucré, basilic et ail.",le Choix du Président,,650 ml,True

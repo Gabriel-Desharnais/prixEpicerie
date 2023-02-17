@@ -77,7 +77,8 @@ for i, p in enumerate(pToLookUp):
 #----------------- fin simulation ----------------
 
 startRow = 3
-for uuid in produitsEs["uuid"].values:
+for pes in produitsEs.values:
+	uuid = pes[0]
 	# Trouver le produit dans la bd producttable
 	match = productTable.loc[productTable["uuid"] == uuid,["nom", "marque", "Format", "description"]].values
 	if len(match) != 1:
@@ -94,7 +95,7 @@ for uuid in produitsEs["uuid"].values:
 	rapport.merge_cells(start_row=startRow, start_column=4, end_row=endRow, end_column=4)
 	rapport.cell(startRow, 5, match[3]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=5, end_row=endRow, end_column=5)
-	rapport.cell(startRow, 6, "").alignment = styles.Alignment(vertical='center')
+	rapport.cell(startRow, 6, pes[1]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=6, end_row=endRow, end_column=6)
 	rapport.cell(startRow, 7, "ch").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=7, end_row=endRow, end_column=7)
