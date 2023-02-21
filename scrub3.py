@@ -1,6 +1,8 @@
 #!/bin/python3
 # -*- coding: utf-8 -*-
 
+"""Ce module cherche via l'api de maxi les termes dans leur produits"""
+
 import pandas
 import maxi
 from pathlib import Path

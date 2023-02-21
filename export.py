@@ -31,4 +31,4 @@ for i, prod in enumerate(productToExport.values):
 	rapport.cell(i+2,4, m["prix"].values[0])
 	rapport.cell(i+2,5, m["unité"].values[0])
 
-wb.save("result/prix2023_02_14.xlsx")
+wb.save("result/prix2023_02_21.xlsx")
