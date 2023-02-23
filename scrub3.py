@@ -35,8 +35,8 @@ for sku, info in res.items():
 		print("erreur too much uuid")
 	# update product table
 	if len(products.loc[products["uuid"] == uid]) == 1:
-		fi = [info["nom"], info["description"], info["marque"], info["format"], True]
-		products.loc[products["uuid"] == uid, ["nom","description","marque","Format","maxi"]] = fi
+		fi = [info["nom"], info["description"], info["marque"], info["format"], True, False]
+		products.loc[products["uuid"] == uid, ["nom","description","marque","Format","maxi","taxable"]] = fi
 
 
 filepath = Path("productTable.csv")

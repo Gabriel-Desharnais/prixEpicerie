@@ -13,8 +13,8 @@ products = pandas.read_csv("productTable.csv")
 maxiProds = products.loc[products["maxi"] == True]
 infoReturned = maxi.scrub(maxiProds["uuid"])
 for uuid, info in infoReturned.items():
-	fi = [info["nom"], info["description"], info["marque"], info["format"]]
-	products.loc[products["uuid"] == uuid, ["nom","description","marque","Format"]] = fi
+	fi = [info["nom"], info["description"], info["marque"], info["format"],False]
+	products.loc[products["uuid"] == uuid, ["nom","description","marque","Format","taxable"]] = fi
 	# TODO: ajouter une logique pour si il y a plus d'un uuid pareil
 
 filepath = Path("productTable.csv")
