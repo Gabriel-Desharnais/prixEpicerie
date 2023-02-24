@@ -8,6 +8,7 @@ import pandas
 
 produitsEs = pandas.read_csv("produitses.csv",na_filter=False)
 productTable = pandas.read_csv("productTable.csv",na_filter=False)
+productEquivalency = pandas.read_csv("productEquivalency.csv")
 
 
 wb = Workbook()
