@@ -85,7 +85,7 @@ for pes in produitsEs.values:
 	if len(match) != 1:
 		continue
 	match = match[0]
-	endRow = startRow + len(pInfo) - 1
+	endRow = startRow + max(len(pInfo), 1) - 1
 	rapport.cell(startRow, 1, match[0]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=1, end_row=endRow, end_column=1)
 	rapport.cell(startRow, 2, match[1]).alignment = styles.Alignment(vertical='center')
@@ -142,7 +142,7 @@ for pes in produitsEs.values:
 	for s in range(4):
 		rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side, sideToBorder[s-1]: side})
 		if s%2:
-			borderLen = len(pInfo) - 2
+			borderLen = max(len(pInfo), 1) - 2
 		else:
 			borderLen = 17
 		match s:
