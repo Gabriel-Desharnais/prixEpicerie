@@ -83,9 +83,13 @@ for pes in produitsEs.values:
 	# Trouver le produit dans la bd producttable
 	match = productTable.loc[productTable["uuid"] == uuid,["nom", "marque", "Format", "description"]].values
 	if len(match) != 1:
+		print("erreur nombre imprévu de match", len(match), uuid)
 		continue
 	match = match[0]
-	endRow = startRow + max(len(pInfo), 1) - 1
+	# Aller chercher les équivalent
+	equ = productEquivalency.loc[productEquivalency["uuid"] == uuid, ["equivalentUuid"]].values
+	# Placer les informations sur le produit original
+	endRow = startRow + max(len(equ), 1) - 1
 	rapport.cell(startRow, 1, match[0]).alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=1, end_row=endRow, end_column=1)
 	rapport.cell(startRow, 2, match[1]).alignment = styles.Alignment(vertical='center')
@@ -105,12 +109,11 @@ for pes in produitsEs.values:
 	rapport.cell(startRow, 9, "/100ml").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=9, end_row=endRow, end_column=9)
 
-
 	esPrice = float("2.15")
 	# Ajouter les produits équivalents
-	smallestPrice = None
+	smallestPrice = 5 # should be none
 	spl = []
-	for i, p in enumerate(pInfo):
+	for i, p in enumerate(pInfo[0:len(equ)]):
 		rapport.cell(startRow+i, 10, p["Épicerie"])
 		rapport.cell(startRow+i, 11, p["nom"])
 		rapport.cell(startRow+i, 12, p["Marque"])
@@ -142,7 +145,7 @@ for pes in produitsEs.values:
 	for s in range(4):
 		rapport.cell(row,column).border = styles.Border(**{sideToBorder[s]: side, sideToBorder[s-1]: side})
 		if s%2:
-			borderLen = max(len(pInfo), 1) - 2
+			borderLen = max(len(equ), 1) - 2
 		else:
 			borderLen = 17
 		match s:
@@ -168,16 +171,18 @@ for pes in produitsEs.values:
 
 	# Ajouter la couleur pour le produit le moins chers
 	# Est-ce que es a le meilleur prix
-	if esPrice <= smallestPrice:
-		# Youpi on a le meilleur prix mettre le produit en vert
-		couleur = styles.PatternFill(start_color="81d41a", end_color="81d41a", fill_type="solid")
-			
-	else:
-		# on n'a pas le meilleur prix mettre le produit en rouge
-		couleur = styles.PatternFill(start_color="ff3838", end_color="ff3838", fill_type="solid")
-	# appliquer la couleur
-	for i in range(1, 10):
-		rapport.cell(startRow, i).fill = couleur
+	try:
+		if esPrice <= smallestPrice:
+			# Youpi on a le meilleur prix mettre le produit en vert
+			couleur = styles.PatternFill(start_color="81d41a", end_color="81d41a", fill_type="solid")
+		else:
+			# on n'a pas le meilleur prix mettre le produit en rouge
+			couleur = styles.PatternFill(start_color="ff3838", end_color="ff3838", fill_type="solid")
+		# appliquer la couleur
+		for i in range(1, 10):
+			rapport.cell(startRow, i).fill = couleur
+	except:
+		pass
 
 	# Appliquer la couleur aux meilleur prix équivalent
 	couleur = styles.PatternFill(start_color="729fcf", end_color="729fcf", fill_type="solid")
