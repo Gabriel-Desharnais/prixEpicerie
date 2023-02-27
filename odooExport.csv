@@ -1,19 +1,19 @@
 External ID,Name,Product Type,Barcode,Sales Price
 2beee429-09c5-41f0-9383-2a7a58c087f8,Mozzarella,Consumable,068200005379,3.93
-26eceb66-8992-47a9-936d-1b63a9a977c7,pin crem,Consumable,068100084245,8.34
+26eceb66-8992-47a9-936d-1b63a9a977c7,Beurre d’arachide crémeux,Consumable,068100084245,8.34
 05fbae84-35c9-4a3d-b74e-6c1b38b09754,Riz instantané,Consumable,059100008003,2.75
 c6deb95c-32bf-483f-a87c-7807184d7b9d,Céréales,Consumable,064100144521,4.72
 5fd4e99b-1fa2-4a20-b251-db220362b356,Spaghettini,Consumable,057316085627,1.58
-2b6dc04b-ac58-475c-9833-1c84443244ff,Céréales Honeycombs,Consumable,628154138983,5.11
-14ae9680-3b7f-4df9-bb23-612c52e02446,Papier hygiénique,Consumable,055742558869,8.68
+2b6dc04b-ac58-475c-9833-1c84443244ff,Céréales Honeycombs,Consumable,628154138983,4.99
+14ae9680-3b7f-4df9-bb23-612c52e02446,Papier hygiénique,Consumable,055742558869,7.0
 57fdc1e6-e2a4-46fa-9fbc-d70fc0e00f38,Papiers mouchoirs 3 épaisseurs,Consumable,055742545951,1.34
 ddde6b11-db66-4774-b68e-f07dcbe3724f,Papiers mouchoirs 2 épaisseurs,Consumable,055742545913,1.05
-02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,Farine tout usage,Consumable,060383186326,
+02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,Farine tout usage,Consumable,060383186326,4.29
 93af6544-51d5-4b7c-bd4a-b42baf319a86,Pain blanc de style italien,Consumable,061077771200,3.14
 907aa40e-66a0-4544-9694-df07a862e39b,Papier essuis tout,Consumable,055742551631,1.62
 e6d5c4e8-e3d3-4049-bdee-08c596949923,Détergent à lave vaiselle,Consumable,055742355482,6.33
-8dacb62a-554d-47e3-9ed0-a5dafb48ebe7,Savon à vaisselle pommes,Consumable,055742523904,2.89
-bfc6f45b-0b03-408d-91f2-44283390428a,Savon à vaisselle melon,Consumable,055742525632,2.89
+8dacb62a-554d-47e3-9ed0-a5dafb48ebe7,Savon à vaisselle pommes,Consumable,055742523904,2.0
+bfc6f45b-0b03-408d-91f2-44283390428a,Savon à vaisselle melon,Consumable,055742525632,2.0
 263f0f7f-1322-4285-98e5-2c4d6acd85f1,Détergent à lessive original,Consumable,055742544787,5.97
 1f8c51a6-18f1-4f53-b97c-0b899d3473c7,Shampoing GLISS,Consumable,017000171531,2.25
 96e9a5e5-2e57-42fa-bb45-d29afcef77f7,Shampoing,Consumable,022400002200,4.52
@@ -21,28 +21,28 @@ bfc6f45b-0b03-408d-91f2-44283390428a,Savon à vaisselle melon,Consumable,0557425
 f03133dc-4285-49b4-959a-3016b7e648da,Revitalisant,Consumable,,4.52
 5f31635f-dde6-49dd-89ce-9423aaf94d80,Revitalisant,Consumable,055086002189,3.61
 2f39adc7-5367-474a-a308-ca79552a4bea,Revitalisant,Consumable,055086000819,3.61
-fdcfeffc-e74f-4833-b4a7-95dc65f39787,Déodorant,Consumable,6018700212269,1.44
+fdcfeffc-e74f-4833-b4a7-95dc65f39787,Déodorant,Consumable,079400212269,1.44
 cdef314b-8dad-47e0-9a2d-367d2298e8c6,Deodorant homme,Consumable,8411104043107,0.91
 070ae6f9-5efe-47f7-80e2-06f1d25b862b,Dentifrice,Consumable,077326830031,0.72
 65eaf000-c1f3-455b-a0e8-d59d1476dbaa,Dentifrice au fluorure Protection contre la carie Menthe fraîche,Consumable,058000313293,0.9
 16405d3e-239d-4d79-b37a-635f3e659ea4,Dentifrice protection contre la carie,Consumable,058000313194,0.9
-3fa4f55e-9d4f-4959-b961-d8d62f543075,Tomates en dés,Consumable,055742363432,1.96
+3fa4f55e-9d4f-4959-b961-d8d62f543075,Tomates en dés,Consumable,055742363432,1.29
 a499285b-92c5-462f-8c87-2d12406d0793,Sauce tomate,Consumable,055742374629,1.17
 ec47fefb-83fe-4bfe-9c4c-31b4fb1bcea4,Sauce à la viande pour pâtes,Consumable,064200327206,2.62
 fc1b011b-b6f3-4516-8d81-f20d909425d7,Sauce marinara,Consumable,055742552386,3.38
 58001ad0-9e5a-4e7a-a60d-97fdc08ef2fb,Confiture fraise,Consumable,055742344523,3.14
 7bb97e5c-9a2d-434f-8eb7-09ab65d7e8ed,Riz grain long,Consumable,055742569674,4.24
 edf83c18-823e-4af3-b5df-0caed2339469,rotini,Consumable,064200116640,2.35
-9a15d96f-250a-4636-b7fb-9b11965b5ed8,Sel de table,Consumable,066010001055,1.49
-ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,Sucre granulé spécial fin,Consumable,062847210233,1.72
+9a15d96f-250a-4636-b7fb-9b11965b5ed8,Sel iodé,Consumable,066010001055,1.49
+ec31b270-a4d7-4167-b57f-f5c6ac0d25fa,Sucre granulé spécial fin,Consumable,062847210233,2.77
 93739ebc-f716-464e-8f72-3a4baea10cbe,Café moulu moyen,Consumable,055742553390,7.86
-f41b6505-9a3e-481d-bc2c-346d54c47491,Café instantané,Consumable,055742382013,5.42
+f41b6505-9a3e-481d-bc2c-346d54c47491,Café instantané,Consumable,055742382013,3.99
 33a3c1c4-34b0-461b-9fd1-2fd35f224d8d,Huile végétale,Consumable,055742570328,5.27
 6fa22fdd-3eae-414f-a933-d838590df41d,Tartinade traditionnelle,Consumable,068200701066,2.75
 22a05a27-1b32-495e-b744-29691a2fad50,Beurre salé,Consumable,055872271867,5.5
-8425ee3b-f8a0-4e17-9b91-95f20be97023,Mozzarella,Consumable,06853729,
-7ce9bada-c58d-4597-8187-14bca3382859,Fromage moz,Consumable,059749969444,3.93
-7f595c3d-59c1-48f7-9f8f-40052d3a5d43,Fromage cheddar blanc doux,Consumable,059749969420,3.93
+8425ee3b-f8a0-4e17-9b91-95f20be97023,Mozzarella,Consumable,06853729,3.97
+7ce9bada-c58d-4597-8187-14bca3382859,Fromage moz,Consumable,059749969444,3.97
+7f595c3d-59c1-48f7-9f8f-40052d3a5d43,Fromage cheddar blanc doux,Consumable,059749969420,3.97
 5d686c90-89f6-431a-be4d-4701c2d5c6b3,Oeuf gros,Consumable,055742561951,3.8
 aef34427-0e84-4dae-a1f5-29f7d0511bbf,Produit laitier sans lactose 1% (1L),Consumable,064420254016,4.39
 bc402d78-b9e5-46f1-a11e-e67c77e2deaa,2% milk (2L),Consumable,055872025019,3.33
@@ -50,3 +50,7 @@ bc402d78-b9e5-46f1-a11e-e67c77e2deaa,2% milk (2L),Consumable,055872025019,3.33
 36c4c6b2-8461-4dd2-969e-843d912a9e47,Détergent à lessive liquide au parfum Fraîcheur cascade,Consumable,628841340101,6.99
 d5f65b3f-4f25-4cef-a5eb-a414324138ab,Pain tranché blanc,Consumable,059749916332,3.14
 57487b0a-8762-4621-a1ea-ef9768275d64,Pain à sandwich moelleux au blé entier,Consumable,059749916356,3.14
+ce126a93-168f-405d-8ffe-b5c7cdab25d6,Savon dove,Consumable,,0.9
+7f73ebfa-5530-4eab-aca4-0e7a2d5a1d82,Savon lever,Consumable,,0.51
+e6511a54-8493-4630-997c-a374211377eb,Papier mouchoirs 2 épaisseurs (x6),Consumable,059749931564,6.3
+582211fd-0f4f-4dd0-b5fe-429ff7ba0f09,Revitalisant,Consumable,022400002170,4.52

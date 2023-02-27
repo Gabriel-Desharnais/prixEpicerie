@@ -10,7 +10,8 @@ c6deb95c-32bf-483f-a87c-7807184d7b9d,Céréales,,Kellogg’s,064100144521,340 g,
 14ae9680-3b7f-4df9-bb23-612c52e02446,Papier hygiénique,,Compliment,055742558869,12 rouleaux,False,False
 57fdc1e6-e2a4-46fa-9fbc-d70fc0e00f38,Papiers mouchoirs 3 épaisseurs,,Compliment,055742545951,88 feuilles,False,False
 ddde6b11-db66-4774-b68e-f07dcbe3724f,Papiers mouchoirs 2 épaisseurs,,Compliment,055742545913,126 feuilles,False,False
-02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,"Purée De Pommes, De Betteraves Et De Graines De Lin En Sachet",,PC Biologique,060383186326,128 ml,True,False
+e6511a54-8493-4630-997c-a374211377eb,Papier mouchoirs 2 épaisseurs (x6),,Selection,059749931564,126 feuilles,False,False
+02d537ca-8341-47b2-acd2-f0bf0d8e9c5d,Farine tout usage,,Sans nom,060383186326,2.5 kg,True,False
 93af6544-51d5-4b7c-bd4a-b42baf319a86,Pain blanc de style italien,,,061077771200,675 g,True,False
 907aa40e-66a0-4544-9694-df07a862e39b,Papier essuis tout,,Valeur plus,055742551631,2 rouleaux,False,False
 e6d5c4e8-e3d3-4049-bdee-08c596949923,Détergent à lave vaiselle,,Compliment,055742355482,1.7 kg,False,False
@@ -23,7 +24,7 @@ bfc6f45b-0b03-408d-91f2-44283390428a,Savon à vaisselle melon,,Compliment,055742
 f03133dc-4285-49b4-959a-3016b7e648da,Revitalisant,,TRESemmé,,828 ml,False,False
 5f31635f-dde6-49dd-89ce-9423aaf94d80,Revitalisant,,Beauty&Planet,055086002189,400 ml,False,False
 2f39adc7-5367-474a-a308-ca79552a4bea,Revitalisant,,Beauty&Planet,055086000819,400 ml,False,False
-fdcfeffc-e74f-4833-b4a7-95dc65f39787,Déodorant,,Dove,6018700212269,45 g,False,False
+fdcfeffc-e74f-4833-b4a7-95dc65f39787,Déodorant,,Dove,079400212269,45 g,False,False
 cdef314b-8dad-47e0-9a2d-367d2298e8c6,Deodorant homme,,Byly,8411104043107,50 ml,False,False
 070ae6f9-5efe-47f7-80e2-06f1d25b862b,Dentifrice,,Tom's of Maine,077326830031,85 ml,False,False
 65eaf000-c1f3-455b-a0e8-d59d1476dbaa,Dentifrice au fluorure Protection contre la carie Menthe fraîche,"<p>Le dentifrice Colgate Protection contre la carie procure la même protection fiable contre les caries pour toute la famille. Formulé au fluorure, il est éprouvé en clinique pour aider à renforcer les dents en réparant les points affaiblis avant la formation des caries et procure une haleine propre et fraîche. De plus, son excellent goût de menthe fraîche plaira à toute la famille.</p><ul><li>Combat la carie</li><li>Nettoie les dents à fond</li><li>Renforce les dents avec du fluorure</li><li>Excellent goût de menthe</li></ul>",Colgate,058000313293,95 ml,True,False
@@ -107,3 +108,6 @@ e4a29cda-a5c2-4386-901a-f7f3a01bb0fa,Café instantané Torréfaction originale 1
 399cc46f-1c8c-46c6-b30e-aab7e801159b,Oeufs tres grands,"Offerts en différents calibres (extra gros, gros, moyen, etc.), les œufs sont blancs ou bruns, selon la race de la poule. Faites craquer leur mince coquille protectrice sur le rebord d'un bol (d'une seule main si vous voulez impressionner vos amis) et utilisez le jaune et le blanc dans vos recettes favorites, du déjeuner au dessert.",Sans Nom,,12 eggs,True,False
 6ec39882-0079-43f6-b59c-ac132fcf3561,Beurre salé,"<p>Le beurre est une masse solide obtenue par le barattage de la crème fraîche pasteurisée.  Il est de texture moelleuse avec une certaine fermeté, une humidité bien incorporée et une couleur uniforme et caractéristique.</p>",Sans Nom,,454 g,True,False
 feda8ec8-14ed-473a-a2bd-f66c2569c379,Beurre salé,Le beurre est un produit laitier fabriqué à partir de crème barattée. Le beurre non salé est habituellement utilisé en pâtisserie tandis que le beurre salé est utilisé pour la cuisson; tous deux ont un goût fantastique lorsqu’ils sont étalés sur du pain frais.,Saputo,,454 g,True,False
+ce126a93-168f-405d-8ffe-b5c7cdab25d6,Savon dove,barre,Dove,,106 g,False,False
+7f73ebfa-5530-4eab-aca4-0e7a2d5a1d82,Savon lever,barre,lever,,113 g,False,False
+582211fd-0f4f-4dd0-b5fe-429ff7ba0f09,Revitalisant,,TRESemmé,022400002170,828 ml,False,False
