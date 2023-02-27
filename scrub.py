@@ -9,6 +9,7 @@ import pandas
 produitsEs = pandas.read_csv("produitses.csv",na_filter=False)
 productTable = pandas.read_csv("productTable.csv",na_filter=False)
 productEquivalency = pandas.read_csv("productEquivalency.csv")
+productMaxi = pandas.read_csv("maxi/productMaxi.csv")
 
 
 wb = Workbook()
@@ -113,19 +114,23 @@ for pes in produitsEs.values:
 	# Ajouter les produits équivalents
 	smallestPrice = 5 # should be none
 	spl = []
-	for i, p in enumerate(pInfo[0:len(equ)]):
-		rapport.cell(startRow+i, 10, p["Épicerie"])
-		rapport.cell(startRow+i, 11, p["nom"])
-		rapport.cell(startRow+i, 12, p["Marque"])
-		rapport.cell(startRow+i, 13, p["ndp"])
-		rapport.cell(startRow+i, 14, p["Format"])
-		rapport.cell(startRow+i, 15, p["description"])
-		rapport.cell(startRow+i, 16, p["prix"])
-		rapport.cell(startRow+i, 17, p["unité p"])
-		rapport.cell(startRow+i, 18, p["prix unitaire"])
-		rapport.cell(startRow+i, 19, p["unité pu"])
+	for i, u in enumerate(equ):
+		u = u[0]
+		p = productTable.loc[productTable["uuid"]==u,["nom", "marque", "sku", "Format", "description"]].values[0]
+		pm = productMaxi.loc[productMaxi["uuid"]==u, ["prix", "unité"]].values[0]
+		fp = pInfo[i]
+		rapport.cell(startRow+i, 10, "Maxi")
+		rapport.cell(startRow+i, 11, p[0])
+		rapport.cell(startRow+i, 12, p[1])
+		rapport.cell(startRow+i, 13, p[2])
+		rapport.cell(startRow+i, 14, p[3])
+		rapport.cell(startRow+i, 15, p[4])
+		rapport.cell(startRow+i, 16, pm[0])
+		rapport.cell(startRow+i, 17, pm[1])
+		rapport.cell(startRow+i, 18, "-")
+		rapport.cell(startRow+i, 19, "-")
 		# Vérifié si le moins chers
-		price  = float(p["prix"])
+		price  = float(fp["prix"])
 		if smallestPrice is None or smallestPrice > price:
 			#Nouveau meilleur prix
 			smallestPrice = price
