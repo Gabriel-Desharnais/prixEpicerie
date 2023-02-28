@@ -88,7 +88,21 @@ for pes in produitsEs.values:
 		continue
 	match = match[0]
 	# Aller chercher les équivalent
-	equ = productEquivalency.loc[productEquivalency["uuid"] == uuid, ["equivalentUuid"]].values
+	equ = [] # Liste des produits équivanlents
+	equNumber = 0
+	# Ajouter le produit en tant que tel pour chaque épicerie
+	nombreDepicerie = productTable.loc[productTable["uuid"] == uuid, ["maxi"]].values[0].tolist().count(True)
+	if nombreDepicerie:
+		equNumber += nombreDepicerie
+		equ.append(uuid)
+	equid = productEquivalency.loc[productEquivalency["uuid"] == uuid, ["equivalentUuid"]].values
+	for u in equid:
+		u = u[0]
+		nombreDepicerie = productTable.loc[productTable["uuid"] == u, ["maxi"]].values[0].tolist().count(True)
+		if nombreDepicerie:
+			equNumber += nombreDepicerie
+			equ.append(u)
+
 	# Placer les informations sur le produit original
 	endRow = startRow + max(len(equ), 1) - 1
 	rapport.cell(startRow, 1, match[0]).alignment = styles.Alignment(vertical='center')
@@ -115,7 +129,7 @@ for pes in produitsEs.values:
 	smallestPrice = 5 # should be none
 	spl = []
 	for i, u in enumerate(equ):
-		u = u[0]
+		u = u
 		p = productTable.loc[productTable["uuid"]==u,["nom", "marque", "sku", "Format", "description"]].values[0]
 		pm = productMaxi.loc[productMaxi["uuid"]==u, ["prix", "unité"]].values[0]
 		fp = pInfo[i]
