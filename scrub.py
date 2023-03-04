@@ -124,9 +124,12 @@ for pes in produitsEs.values:
 	rapport.cell(startRow, 9, "/100ml").alignment = styles.Alignment(vertical='center')
 	rapport.merge_cells(start_row=startRow, start_column=9, end_row=endRow, end_column=9)
 
-	esPrice = float("2.15")
+	try:
+		esPrice = float(pes[1])
+	except:
+		esPrice = 100000000
 	# Ajouter les produits équivalents
-	smallestPrice = 5 # should be none
+	smallestPrice = None # should be none
 	spl = []
 	for i, u in enumerate(equ):
 		u = u
@@ -144,7 +147,10 @@ for pes in produitsEs.values:
 		rapport.cell(startRow+i, 18, "-")
 		rapport.cell(startRow+i, 19, "-")
 		# Vérifié si le moins chers
-		price  = float(fp["prix"])
+		try:
+			price  = float(fp["prix"])
+		except:
+			price = 10000000
 		if smallestPrice is None or smallestPrice > price:
 			#Nouveau meilleur prix
 			smallestPrice = price
