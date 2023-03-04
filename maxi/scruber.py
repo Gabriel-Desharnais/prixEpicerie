@@ -92,7 +92,7 @@ def scrub(pIDs, rateLimit=0.5):
 	secTowait = 1/rateLimit
 	# Créer les paramètres
 	payload = {"lang": "fr",
-			   "date": "28022023",
+			   "date": "07032023",
 			   "pickupType": "STORE",
 			   "storeId": "8922",
 			   "banner": "maxi"}
