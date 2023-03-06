@@ -127,7 +127,7 @@ for pes in produitsEs.values:
 	try:
 		esPrice = float(pes[1])
 	except:
-		esPrice = 100000000
+		esPrice = 100000000 # FIXME c'est pas comme ça qu'on fait ça
 	# Ajouter les produits équivalents
 	smallestPrice = None # should be none
 	spl = []
@@ -148,9 +148,9 @@ for pes in produitsEs.values:
 		rapport.cell(startRow+i, 19, "-")
 		# Vérifié si le moins chers
 		try:
-			price  = float(fp["prix"])
+			price  = float(pm[0])
 		except:
-			price = 10000000
+			price = 10000000 # FIXME c'est pas comme ça qu'on fait ça
 		if smallestPrice is None or smallestPrice > price:
 			#Nouveau meilleur prix
 			smallestPrice = price
