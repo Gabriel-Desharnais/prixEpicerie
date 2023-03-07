@@ -134,6 +134,12 @@ def scrub(pIDs, rateLimit=0.5):
 			res = r.json()
 			productInfoMaxi["prix"].values[0] = res['offers'][0]['price']['value']
 			productInfoMaxi["unité"].values[0] = res['offers'][0]['price']['unit']
+			# TODO Déterminer si le produit est en rabais
+			normalPrice = res['offers'][0]['wasPrice']
+			if normalPrice is None:
+				productInfoMaxi["type_de_prix"].values[0] = "régulier"
+			else:
+				productInfoMaxi["type_de_prix"].values[0] = "rabais"
 			print(res['offers'][0]['price']['value'])
 			products.loc[products['uuid'] == pID] = productInfoMaxi
 			scrubedData[pID] = {"nom":res["name"], 
