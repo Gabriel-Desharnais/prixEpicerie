@@ -6,6 +6,7 @@ import time
 import pandas
 from pathlib import Path
 import json
+import numpy
 
 productUrlPrefix  = "https://api.pcexpress.ca/product-facade/v4/products/"
 
@@ -92,7 +93,7 @@ def scrub(pIDs, rateLimit=0.5):
 	secTowait = 1/rateLimit
 	# Créer les paramètres
 	payload = {"lang": "fr",
-			   "date": "07032023",
+			   "date": "14032023",
 			   "pickupType": "STORE",
 			   "storeId": "8922",
 			   "banner": "maxi"}
@@ -127,7 +128,12 @@ def scrub(pIDs, rateLimit=0.5):
 			# Effectuer la requète
 			r = s.get(productUrl, params=payload, headers=headers)
 			# Valider que la requète est réalisé avec succès
-			if r.status_code != 200:
+			if r.status_code == 404:
+				print("Produit non trouvé:", productInfoMaxi['id_interne'])
+				productInfoMaxi["prix"].values[0] = numpy.NAN
+				products.loc[products['uuid'] == pID] = productInfoMaxi
+				continue
+			elif r.status_code != 200:
 				print(r.status_code, r)
 				#scrubedData.append("NaN")
 				continue
