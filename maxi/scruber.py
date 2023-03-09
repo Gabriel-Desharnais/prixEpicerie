@@ -146,6 +146,10 @@ def scrub(pIDs, rateLimit=0.5):
 				productInfoMaxi["type_de_prix"].values[0] = "régulier"
 			else:
 				productInfoMaxi["type_de_prix"].values[0] = "rabais"
+			if res['offers'][0]["badges"]["dealBadge"] is not None:
+				if res['offers'][0]["badges"]["dealBadge"]["type"] == "MULTI":
+					print("attention prix multiple", productInfoMaxi['id_interne'])
+					productInfoMaxi["type_de_prix"].values[0] = "Multiple"
 			print(res['offers'][0]['price']['value'])
 			products.loc[products['uuid'] == pID] = productInfoMaxi
 			scrubedData[pID] = {"nom":res["name"], 
