@@ -121,6 +121,7 @@ def scrub(pIDs, rateLimit=0.5):
 		# TODO: se connecter au site et obtenir la clée de connection
 		headers["x-apikey"] = "1im1hL52q9xvta16GlSdYDsTsG0dmyhF"
 		for pID in pIDs:
+			commentaire = ""
 			productInfoMaxi = products.loc[products['uuid'] == pID]
 			# Créer l'url
 			productUrl = f"{productUrlPrefix}{productInfoMaxi['id_interne'].values[0]}"
@@ -146,11 +147,14 @@ def scrub(pIDs, rateLimit=0.5):
 				productInfoMaxi["type_de_prix"].values[0] = "régulier"
 			else:
 				productInfoMaxi["type_de_prix"].values[0] = "rabais"
+				commentaire += f"{res['offers'][0]['wasPrice'].get('value')}  {res['offers'][0]['wasPrice'].get('unit')}"
 			if res['offers'][0]["badges"]["dealBadge"] is not None:
 				if res['offers'][0]["badges"]["dealBadge"]["type"] == "MULTI":
 					print("attention prix multiple", productInfoMaxi['id_interne'])
 					productInfoMaxi["type_de_prix"].values[0] = "Multiple"
+					commentaire += res['offers'][0]["badges"]["dealBadge"].get("text","multiple")
 			print(res['offers'][0]['price']['value'])
+			productInfoMaxi["commentaire"].values[0] = commentaire
 			products.loc[products['uuid'] == pID] = productInfoMaxi
 			scrubedData[pID] = {"nom":res["name"], 
 								"description":res.get("description", ""), 
