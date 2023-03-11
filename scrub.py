@@ -21,7 +21,7 @@ rapport = wb.create_sheet("Analyse",0)
 rapport["A1"] = "Produits ?picerie solidaire"
 rapport["J1"] = "Produits concurence"
 rapport.merge_cells("A1:I1")
-rapport.merge_cells("J1:T1")
+rapport.merge_cells("J1:U1")
 rapport["A1"].fill = styles.PatternFill(start_color="bf819e", end_color="bf819e", fill_type="solid")
 rapport["J1"].fill = styles.PatternFill(start_color="ffe994", end_color="ffe994", fill_type="solid")
 
@@ -45,6 +45,7 @@ rapport["Q2"] = "Prix"
 rapport["R2"] = "Unité"
 rapport["S2"] = "Prix unitaire"
 rapport["T2"] = "Unité"
+rapport["U2"] = "Commentaire"
 
 # Préparer la liste des produit à vérifier
 pToLookUp = set(range(6))
@@ -135,7 +136,7 @@ for pes in produitsEs.values:
 	for i, u in enumerate(equ):
 		u = u
 		p = productTable.loc[productTable["uuid"]==u,["nom", "marque", "sku", "Format", "description"]].values[0]
-		pm = productMaxi.loc[productMaxi["uuid"]==u, ["prix", "unité","type_de_prix"]].values[0]
+		pm = productMaxi.loc[productMaxi["uuid"]==u, ["prix", "unité","type_de_prix","commentaire"]].values[0]
 		fp = pInfo[i]
 		rapport.cell(startRow+i, 10, "Maxi")
 		rapport.cell(startRow+i, 11, p[0])
@@ -148,6 +149,7 @@ for pes in produitsEs.values:
 		rapport.cell(startRow+i, 18, pm[1])
 		rapport.cell(startRow+i, 19, "-")
 		rapport.cell(startRow+i, 20, "-")
+		rapport.cell(startRow+i, 21, pm[3])
 		# Vérifié si le moins chers
 		try:
 			price  = float(pm[0])
@@ -174,7 +176,7 @@ for pes in produitsEs.values:
 		if s%2:
 			borderLen = max(len(equ), 1) - 2
 		else:
-			borderLen = 18
+			borderLen = 19
 		match s:
 			case 0:
 				column += 1
@@ -214,7 +216,7 @@ for pes in produitsEs.values:
 	# Appliquer la couleur aux meilleur prix équivalent
 	couleur = styles.PatternFill(start_color="729fcf", end_color="729fcf", fill_type="solid")
 	for row in spl:
-		for i in range(10, 21):
+		for i in range(10, 22):
 			rapport.cell(row, i).fill = couleur
 	
 	# Augmenter la ligne de départ
